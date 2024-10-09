@@ -26,7 +26,7 @@ Esta API é responsável por gerenciar a comunicação entre o frontend e o banc
 ### Clonando o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio-api.git
+git clone https://github.com/Bruno-Lafayette/CG-API.git
 cd seu-repositorio-api
 ```
 
