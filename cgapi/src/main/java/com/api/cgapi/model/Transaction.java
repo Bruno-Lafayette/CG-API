@@ -1,4 +1,6 @@
 package com.api.cgapi.model;
+import java.util.Date;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -9,6 +11,7 @@ public class Transaction {
     private String description;
     private double amount;
     private String type; // income or expense
+    private Date date;
 
     // Getters e Setters
 
@@ -42,5 +45,13 @@ public class Transaction {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }

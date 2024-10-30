@@ -1,5 +1,6 @@
 package com.api.cgapi.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,9 @@ public class TransactionController {
 
     @PostMapping
     public Transaction createTransaction(@RequestBody Transaction transaction) {
+        if (transaction.getDate() == null) {
+            transaction.setDate(new Date());
+        }
         return transactionRepository.save(transaction);
     }
 }
